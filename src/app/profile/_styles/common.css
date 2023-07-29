@@ -1,0 +1,50 @@
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+}
+
+header > * > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 70px;
+}
+
+header > * > div > ul > li > a {
+  color: inherit;
+  font-weight: 500 !important;
+}
+
+header > * > div > * > img {
+  width: 50px;
+  height: 50px;
+}
+
+header > * > div > * > li {
+  display: inline-block;
+  margin: 0 0 0 6rem;
+}
+
+/* Error page */
+.error {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+/* Media Queries */
+@media (max-width: 540px) {
+  footer > div {
+    margin: 0 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  header > * > div {
+    margin: 0 0 0 4rem;
+  }
+}
